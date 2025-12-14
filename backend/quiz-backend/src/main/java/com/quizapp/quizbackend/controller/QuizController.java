@@ -13,10 +13,15 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
+// @RestController
+// @RequestMapping("/api/quizzes")
+// @CrossOrigin(origins = "http://localhost:5173")
+// public class QuizController {
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/quizzes")
-@CrossOrigin(origins = "http://localhost:5173")
 public class QuizController {
+
 
     private final QuizRepository quizRepository;
     private final QuestionRepository questionRepository;

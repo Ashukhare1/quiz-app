@@ -9,9 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+// @RestController
+// @RequestMapping("/api/auth")
+// @CrossOrigin(origins = "http://localhost:5173")
+// public class AuthController {
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173")
 public class AuthController {
 
     private final UserRepository userRepository;

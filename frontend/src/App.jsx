@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_BASE = "http://localhost:8080/api";
+// App.jsx
+// const API_BASE = import.meta.env.VITE_API_BASE || "/api";
+// const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8080/api";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8080/api";
+
+
 
 function App() {
   // auth
